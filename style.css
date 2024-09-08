@@ -1,1 +1,93 @@
-/* Styles.css */
+:root {
+    --primary: #15153e;
+    --white: #fff;
+    --clear: #ff4d4d;
+    --equal: #4caf50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+.calculator {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    background-color: var(--white);
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    width: 23%;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.operands:hover {
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.equals {
+    width: 48%;
+    background-color: var(--equal);
+    color: var(--white);
+}
+
+.equals:hover {
+    background-color: var(--white);
+    border: 2px solid var(--equal);
+    color: var(--equal);
+    font-weight: bold;
+}
+
+.clear {
+    width: 48%;
+    background-color: var(--clear);
+    color: var(--white);
+}
+
+.clear:hover {
+    background-color: var(--white);
+    border: 2px solid var(--clear);
+    color: var(--clear);
+    font-weight: bold;
+}
+
